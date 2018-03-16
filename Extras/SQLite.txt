@@ -1,0 +1,66 @@
+Bases de Datos Locales.
+
+SQLiteOpenhelper (Nativa)
+	*getReadableDatabase y getWritableDatabase (regresan objeto de tipo "SQLiteDatabase")
+	*onCreate() -> Se ejecuta una sola vez, a menos de que se reinstale la aplicación.
+	*onUpgrade() -> Se ejecuta solo si hay un cambio de versión de la base de datos.
+	*Llaves foraneas inhabilitadas.
+		PRAGMA FOREIGN-KEYS = ON
+	*Para hacer los campos autoincrementables definir:
+		Integer & Primary Key 
+
+
+
+SQLiteDataBase
+	*execSQL -> Ejecuta cualquier instruccion CUD
+	*Métodos Parametrizados
+		insert(), delete() y update()
+	*rawQuery -> Solo para select, te regresa un cursor (Se va moviendo en el conjunto de resultados)
+
+
+Crear proyecto en Android Studio.
+		"Training"
+		Nombre del paquete: 
+	Next. (Form factors and minimum SDK)
+		Phone and tablet (Lolipop 5.0)
+	Next. (Add an Activity to Mobile)
+		Empty activity.
+	Next. (Create a new empty activity)
+		Employee (.java)
+		activity_employee (.xml)
+
+	Crear los campos de tipo edittext
+	Crear un combo de tipo Spinner.
+
+
+	Manifiesto: Sirve para configurar permisos, definir la actividad de inicio (Launcher), dar de alta servicios, para registrar todas las actividades que va a tener la aplicación.
+
+	Acceder a un recurso desde:
+		java: R.mipmap.ic_launcher
+		xml: @mipmap/ic_launcher
+
+	Layout:
+		1.- LinearLayout(Vertical/horizontal)
+		2.- RelativeLayout
+		3.- TableLayout
+		4.- GridLayout
+		5.- FrameLayout
+
+	raw -> Es una carpeta que se crea en caso de trabajar con audios.
+
+	Generar la base de datos:
+		En la carpeta javaG enerar una nueva clase "BDEmployee"
+		create constructor matchin super ->el primero 4 parametros
+
+
+	Elementos que conforman las aplicaciones
+		1.- Actividades
+		2.- Vistas
+		3.- Servicios (Procesos en segundo plano, realizan ciertas acciones en un tiempo determinado)
+		4.- Intenciones (Explicitas e implicitas)
+		5.- Receptores de anuncios (Bateria baja)
+		6.- Proveedores de contenidos
+
+		edtnom
+		edtlastame
+		spnjob

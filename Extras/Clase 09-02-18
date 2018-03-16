@@ -1,0 +1,26 @@
+Buscar el proyecto
+Darle clic derecho y darle en export en "WAR FILE"
+Seleccionar webapps y ver la ruta y ahí está el .war
+Apache Tomcat v7.0
+Marcar opción "Override existing file"
+
+Ir a postman:
+http://localhost:8080/WSPATM18/api/empleado/listaempleados
+
+Insetar un empleado en postman:
+http://localhost:8080/WSPATM18/api/empleado/inseempleados (POST->JSON)
+
+
+NOTA: Poner en header:Content-Type
+Application/json
+
+Tienen que ser con los atributos de la clase (Que los atributos de la clase sean igual a la de la base de datos: Sugerencia1)
+
+{
+	"keyEmp":"4",
+	"nameEmp":"Vale",
+	"lastName":"Caudillo",
+	"lastNameMom":"Martinez",
+	"bornDate":"1995-02-01",
+	"emailEmp":"14030085@itcelaya.edu.mx"
+}

@@ -1,0 +1,36 @@
+Bases de Datos Locales.
+
+SQLiteOpenhelper (Nativa)
+	*getReadableDatabase y getWritableDatabase (regresan objeto de tipo "SQLiteDatabase")
+	*onCreate() -> Se ejecuta una sola vez, a menos de que se reinstale la aplicación.
+	*onUpgrade() -> Se ejecuta solo si hay un cambio de versión de la base de datos.
+	*Llaves foraneas inhabilitadas.
+		PRAGMA FOREIGN-KEYS = ON
+	*Para hacer los campos autoincrementables definir:
+		Integer & Primary Key 
+
+
+
+SQLiteDataBase
+	*execSQL -> Ejecuta cualquier instruccion CUD
+	*Métodos Parametrizados
+		insert(), delete() y update()
+	*rawQuery -> Solo para select, te regresa un cursor (Se va moviendo en el conjunto de resultados)
+
+
+Crear proyecto en Android Studio.
+		"Training"
+		Nombre del paquete: 
+	Next. (Form factors and minimum SDK)
+		Phone and tablet (Lolipop 5.0)
+	Next. (Add an Activity to Mobile)
+		Empty activity.
+	Next. (Create a new empty activity)
+		Employee (.java)
+		activity_employee (.xml)
+
+	Crear los campos de tipo edit
+	Crear un combo de tipo Spinner.
+
+
+	Manifiesto: Sirve para configurar permisos, definir la actividad de inicio (Launcher), dar de alta servicios, para registrar todas las actividades que va a tener la aplicación.
